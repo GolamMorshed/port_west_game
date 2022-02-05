@@ -5368,7 +5368,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -28345,8 +28344,6 @@ var render = function () {
                   ),
                 ]
               ),
-              _vm._v(" "),
-              _c("h1", [_vm._v(_vm._s(_vm.answer))]),
               _vm._v(" "),
               _c("img", {
                 staticClass: "imageproduit",

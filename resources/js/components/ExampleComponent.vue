@@ -40,7 +40,6 @@
                         <!-- <div class="alert alert-success" role="alert">
                              <p>Guess the car model</p>
                         </div>                     -->                       
-                        <h1>{{answer}}</h1>
                         <img :src=question style="height:100px;weight:300px" class="imageproduit">                       
                         <br>
                         <br>
