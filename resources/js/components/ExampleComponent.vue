@@ -236,6 +236,7 @@
                 this.userScore = 0;
                 this.countDown = 60;
                 this.countDownTimer();
+                this.user_ans ='';
                 var gameOverAlert = document.getElementById("game-over-alert");          
                 var ansSubmitBtn = document.getElementById("ans-submit");
                 var timeRemaining = document.getElementById("time-remain-alert");                                       
