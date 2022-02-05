@@ -5512,6 +5512,7 @@ __webpack_require__.r(__webpack_exports__);
     StartAgain: function StartAgain() {
       this.userScore = 0;
       this.countDown = 60;
+      this.countDownTimer();
       var gameOverAlert = document.getElementById("game-over-alert");
       var ansSubmitBtn = document.getElementById("ans-submit");
       var timeRemaining = document.getElementById("time-remain-alert");
