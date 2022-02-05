@@ -5390,9 +5390,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     this.GetScoreBoard();
-    var currentdate = new Date();
-    this.gameStartTime = currentdate;
-    console.log(this.gameStartTime);
+    this.GameStartTime();
   },
   methods: {
     StartGame: function StartGame() {
@@ -5408,6 +5406,10 @@ __webpack_require__.r(__webpack_exports__);
         this.countDownTimer();
         this.GetQuestionBank();
       }
+    },
+    GameStartTime: function GameStartTime() {
+      var currentdate = new Date();
+      this.gameStartTime = currentdate;
     },
     countDownTimer: function countDownTimer() {
       var _this = this;
@@ -5594,7 +5596,7 @@ __webpack_require__.r(__webpack_exports__);
   watch: {
     countDown: function countDown() {
       if (this.countDown == 0) {
-        this.GameOver(); //this.StartGame();
+        this.GameOver();
       }
     }
   }

@@ -127,9 +127,7 @@
         },
         mounted() {
             this.GetScoreBoard();
-            var currentdate = new Date(); 
-            this.gameStartTime = currentdate;
-            console.log(this.gameStartTime);           
+            this.GameStartTime();          
         },
         methods:{
             StartGame(){
@@ -144,6 +142,10 @@
                     this.countDownTimer();
                     this.GetQuestionBank();
                 }
+            },
+            GameStartTime(){
+                var currentdate = new Date(); 
+                this.gameStartTime = currentdate;
             },
             countDownTimer() {
                 if(this.countDown > 0) {
@@ -316,8 +318,7 @@
         watch:{
             countDown:function(){
                 if(this.countDown==0){                 
-                this.GameOver();    
-                    //this.StartGame();
+                    this.GameOver();    
                 }
             }
         }
